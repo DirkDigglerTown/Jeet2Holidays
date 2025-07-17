@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jeet2holidays - Travel Agency</title>
+  <style>
+    body {
+      background: #bde0fc;
+      font-family: 'Verdana', Arial, sans-serif;
+      color: #222;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: linear-gradient(to right, #dde, #eef, #dde);
+      text-align: center;
+      padding: 18px 0 8px 0;
+      border-bottom: 4px double #2771b2;
+      box-shadow: 0 2px 12px #aaa;
+    }
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+      color: #2771b2;
+      text-shadow: 1px 1px 0 #fff, 0 2px 8px #d4ebf2;
+      letter-spacing: 2px;
+      margin-bottom: 4px;
+    }
+    .tagline {
+      font-size: 18px;
+      color: #e44d56;
+      font-family: Arial, sans-serif;
+      font-style: italic;
+    }
+    nav {
+      background: #e2e2e2;
+      text-align: center;
+      border-bottom: 2px solid #2771b2;
+      padding: 7px 0;
+      font-size: 18px;
+    }
+    nav a {
+      color: #2771b2;
+      text-decoration: underline;
+      padding: 0 14px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #e44d56;
+    }
+    .container {
+      max-width: 890px;
+      margin: 22px auto;
+      background: #fffefa;
+      box-shadow: 0 0 18px #bbc;
+      border-radius: 9px;
+      padding: 22px;
+      border: 2px solid #eee;
+    }
+    .section-title {
+      font-size: 26px;
+      color: #2771b2;
+      border-bottom: 2px dashed #e44d56;
+      margin-bottom: 12px;
+      margin-top: 28px;
+      font-family: Verdana, sans-serif;
+    }
+    .about-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .team-card {
+      background: #f3f3f3;
+      border: 1.5px solid #2771b2;
+      border-radius: 8px;
+      width: 28%;
+      margin-bottom: 22px;
+      box-shadow: 1px 2px 8px #ddd;
+      text-align: center;
+      font-size: 15px;
+      min-width: 210px;
+      max-width: 240px;
+    }
+    .team-card img {
+      width: 98%;
+      margin-top: 6px;
+      border-radius: 6px;
+      border: 1.5px solid #ccc;
+      box-shadow: 1px 2px 7px #d6d6d6;
+    }
+    .team-card .name {
+      font-weight: bold;
+      color: #e44d56;
+      font-size: 18px;
+      margin-top: 6px;
+    }
+    .team-card .title {
+      color: #2771b2;
+      font-size: 16px;
+      font-style: italic;
+      margin-bottom: 7px;
+    }
+    .mission-box {
+      background: #f4e1ea;
+      border: 2.5px dotted #e44d56;
+      border-radius: 7px;
+      padding: 15px;
+      margin-bottom: 22px;
+      font-size: 18px;
+      color: #941e30;
+      text-shadow: 0 1px 0 #fff;
+    }
+    .dest-card {
+      display: flex;
+      gap: 30px;
+      margin-top: 16px;
+      align-items: center;
+      background: #e8f3ee;
+      border-radius: 10px;
+      border: 1.5px solid #bbb;
+      box-shadow: 1px 1px 9px #c2c2c2;
+      padding: 14px;
+      margin-bottom: 20px;
+    }
+    .dest-card img {
+      width: 320px;
+      border-radius: 7px;
+      border: 2px solid #e44d56;
+      box-shadow: 0 2px 14px #aab;
+    }
+    .dest-details {
+      flex: 1;
+    }
+    .footer {
+      background: #dde;
+      text-align: center;
+      color: #555;
+      font-size: 14px;
+      padding: 12px 0 8px 0;
+      border-top: 2px solid #2771b2;
+      margin-top: 32px;
+    }
+    @media (max-width: 1000px) {
+      .about-row { flex-direction: column; align-items: center; }
+      .team-card { width: 65%; }
+      .dest-card { flex-direction: column; }
+      .dest-card img { width: 97%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo">jeet<span style="color:#2771b2;">2</span><span style="color:#e44d56;">holidays</span></div>
+    <div class="tagline">TRAVEL AGENCY</div>
+  </div>
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#mission">Mission</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <div class="container">
+    <div id="about">
+      <div class="section-title">Meet Our Team</div>
+      <div class="about-row">
+        <div class="team-card">
+          <img src="VPSALES.jpg" alt="VP Sales">
+          <div class="name">Rajeev</div>
+          <div class="title">Vice President, Sales</div>
+          <div>Proudly oversees sales strategy with a focus on budget holidays and maximum savings (for us, not you).</div>
+        </div>
+        <div class="team-card">
+          <img src="Finance.jpg" alt="Finance">
+          <div class="name">Amit</div>
+          <div class="title">Finance Director</div>
+          <div>Keeps the books balanced, the deals questionable, and the hidden fees thriving since 2007.</div>
+        </div>
+        <div class="team-card">
+          <img src="HR.jpg" alt="HR">
+          <div class="name">Sunil</div>
+          <div class="title">Head of HR</div>
+          <div>Ensures employee morale is as low as our package prices. Ask him about our "slum immersion" team bonding!</div>
+        </div>
+      </div>
+      <div class="about-row">
+        <div class="team-card">
+          <img src="IT.png" alt="IT">
+          <div class="name">Girish</div>
+          <div class="title">IT & Web Support</div>
+          <div>Still running Windows XP. If the website crashes, just refresh and pray.</div>
+        </div>
+        <div class="team-card">
+          <img src="SalesRep.jpg" alt="Sales Rep">
+          <div class="name">Panjeet</div>
+          <div class="title">Sales Representative</div>
+          <div>The face of Jeet2Holidays. Ask for our exclusive “Roofless Room” package.</div>
+        </div>
+      </div>
+    </div>
+    <div id="mission">
+      <div class="section-title">Our Mission</div>
+      <div class="mission-box">
+        At jeet2holidays, our mission is simple: to send you on the most “authentic” and “immersive” vacations to the heart of India’s finest slums.<br><br>
+        Why settle for luxury when you can experience true community living, bucket showers, 5-star mosquitoes, and complimentary “local wildlife encounters”?<br>
+        <b>Book today and enjoy:</b>
+        <ul>
+          <li>Authentic rooftop views (because there’s no ceiling)</li>
+          <li>Unlimited outdoor plumbing (find your own adventure)</li>
+          <li>Street cuisine straight from someone else’s hands</li>
+          <li>Meet your new neighbors—cows, goats, and the local rats!</li>
+        </ul>
+        <i>Jeet2Holidays – Because not all who wander are lost. Some are just misplaced by us.</i>
+      </div>
+    </div>
+    <div id="destinations">
+      <div class="section-title">Featured Destination</div>
+      <div class="dest-card">
+        <img src="Slums.jpg" alt="Indian Slums">
+        <div class="dest-details">
+          <h3>Slums of Mumbai – The Real India Experience</h3>
+          <p>
+            Forget about beaches or palaces, at Jeet2Holidays our #1 package is a week in Mumbai’s bustling slums! <br>
+            <b>All-inclusive package features:</b>
+            <ul>
+              <li>Stay in your very own corrugated steel suite</li>
+              <li>Guided tour of the local recycling industry</li>
+              <li>Sunset views from a pile of building rubble</li>
+              <li>Hands-on laundry experience at the public water tank</li>
+              <li>Evenings of satellite TV (if your neighbor lets you borrow the dish)</li>
+            </ul>
+            <b>Book now and receive a free tetanus shot on arrival!</b>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="section-title">Contact Us</div>
+      <p>
+        <b>Email:</b> jeet2holidays@email.com<br>
+        <b>Phone:</b> +91 12345 67890<br>
+        <b>Office Address:</b> Next to Railway Tracks, Behind the Big Tree, Mumbai-400001, India
+      </p>
+    </div>
+  </div>
+  <div class="footer">
+    &copy; 2007-2025 jeet2holidays.com | All rights reserved | “You arrive, we survive.”
+  </div>
+</body>
+</html>
